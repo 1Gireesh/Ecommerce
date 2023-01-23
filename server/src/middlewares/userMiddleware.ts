@@ -1,5 +1,5 @@
 import jwt, { JwtPayload, Secret } from "jsonwebtoken";
-import UserModel from "../modules/user/User";
+import UserModel from "../modules/user/UserModel";
 import "dotenv/config";
 import { Response, Request, NextFunction } from "express";
 // import { CustomRequest } from "./userMiddleware";
