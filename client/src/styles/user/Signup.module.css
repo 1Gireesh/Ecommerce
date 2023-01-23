@@ -1,0 +1,63 @@
+.signup {
+  @apply flex justify-center items-center font-bold;
+  font-size: larger;
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: 5px 1px 10px rgb(0, 0, 0);
+
+  }
+  to {
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
+
+  }
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 10px;
+  width: 50%;
+  background: white;
+  box-shadow: 2px 2px 30px rgb(255, 0, 0);
+  padding: 50px;
+  align-items: center;
+  animation: shadow alternate 1s infinite;
+  z-index: 1;
+  justify-content: center;
+}
+
+.submit {
+  width: 150px !important;
+}
+
+.signupInput input {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  position: relative;
+  height: 35px;
+  border-bottom: 1px solid;
+}
+.signupInput input:focus {
+  outline: none;
+  border-bottom: 2px solid teal;
+}
+.signupInput label {
+  position: relative;
+  top: 30px;
+  transition: 0.3s;
+}
+
+@media screen and (width<600px) {
+  .signup form {
+    width: 90%;
+  }
+  .signup input {
+    width: 70vw;
+  }
+}

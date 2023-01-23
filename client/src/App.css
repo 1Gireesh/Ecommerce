@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.app{
+  height: 1000vh;
+}
+.app>div{
+  position: relative;
+  top: 50px;
+}
